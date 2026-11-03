@@ -388,7 +388,7 @@
             this.pnlSearch.Controls.Add(this.txtSearch);
             this.pnlSearch.Controls.Add(this.BTNDsearch);
             this.pnlSearch.Controls.Add(this.dgvDepartments);
-            this.pnlSearch.Location = new System.Drawing.Point(499, 96);
+            this.pnlSearch.Location = new System.Drawing.Point(518, 108);
             this.pnlSearch.Name = "pnlSearch";
             this.pnlSearch.Size = new System.Drawing.Size(744, 807);
             this.pnlSearch.TabIndex = 14;
