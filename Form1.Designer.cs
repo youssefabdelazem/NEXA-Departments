@@ -52,42 +52,6 @@
             this.lblDepartmentName = new System.Windows.Forms.Label();
             this.lblAddDepartmentTitle = new System.Windows.Forms.Label();
             this.pnlSearch = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblID = new System.Windows.Forms.Label();
-            this.lblA = new System.Windows.Forms.Label();
-            this.lblDN = new System.Windows.Forms.Label();
-            this.lblD = new System.Windows.Forms.Label();
-            this.lblDsales = new System.Windows.Forms.Label();
-            this.lblDfinance = new System.Windows.Forms.Label();
-            this.lblDHR = new System.Windows.Forms.Label();
-            this.lblDIT = new System.Windows.Forms.Label();
-            this.lblDmarketing = new System.Windows.Forms.Label();
-            this.lblSales = new System.Windows.Forms.Label();
-            this.lblMarketing = new System.Windows.Forms.Label();
-            this.lblHR = new System.Windows.Forms.Label();
-            this.lblFinance = new System.Windows.Forms.Label();
-            this.picEdit8 = new System.Windows.Forms.PictureBox();
-            this.picEdit7 = new System.Windows.Forms.PictureBox();
-            this.lblIt = new System.Windows.Forms.Label();
-            this.labelNo4 = new System.Windows.Forms.Label();
-            this.labelNo5 = new System.Windows.Forms.Label();
-            this.labelNo3 = new System.Windows.Forms.Label();
-            this.labelNo2 = new System.Windows.Forms.Label();
-            this.labelNo1 = new System.Windows.Forms.Label();
-            this.picEdit10 = new System.Windows.Forms.PictureBox();
-            this.picEdit6 = new System.Windows.Forms.PictureBox();
-            this.picEdit4 = new System.Windows.Forms.PictureBox();
-            this.picEdit9 = new System.Windows.Forms.PictureBox();
-            this.picEdit5 = new System.Windows.Forms.PictureBox();
-            this.picEdit3 = new System.Windows.Forms.PictureBox();
-            this.picEdit = new System.Windows.Forms.PictureBox();
-            this.picEdit1 = new System.Windows.Forms.PictureBox();
-            this.btnext = new System.Windows.Forms.Button();
-            this.btnPrevious = new System.Windows.Forms.Button();
-            this.btnPage1 = new System.Windows.Forms.Button();
-            this.btnPage2 = new System.Windows.Forms.Button();
-            this.lblShowing = new System.Windows.Forms.Label();
-            this.picSearch1 = new System.Windows.Forms.PictureBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.lblHeaderTitle = new System.Windows.Forms.Label();
             this.picLayers = new System.Windows.Forms.PictureBox();
@@ -97,6 +61,14 @@
             this.picNotification = new System.Windows.Forms.PictureBox();
             this.picUserArrow = new System.Windows.Forms.PictureBox();
             this.pnlHeader = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.dgvDepartments = new System.Windows.Forms.DataGridView();
+            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDepartmentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEdit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDelete = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BTNDsearch = new System.Windows.Forms.Button();
             this.pnlSidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.piclogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picsearch)).BeginInit();
@@ -107,23 +79,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.picdashboard)).BeginInit();
             this.pnlAddDepartment.SuspendLayout();
             this.pnlSearch.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSearch1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLayers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNotification)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUserArrow)).BeginInit();
             this.pnlHeader.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDepartments)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSidebar
@@ -330,7 +292,7 @@
             this.pnlAddDepartment.Controls.Add(this.txtDepartmentName);
             this.pnlAddDepartment.Controls.Add(this.lblDepartmentName);
             this.pnlAddDepartment.Controls.Add(this.lblAddDepartmentTitle);
-            this.pnlAddDepartment.Location = new System.Drawing.Point(276, 96);
+            this.pnlAddDepartment.Location = new System.Drawing.Point(41, 108);
             this.pnlAddDepartment.Name = "pnlAddDepartment";
             this.pnlAddDepartment.Size = new System.Drawing.Size(390, 795);
             this.pnlAddDepartment.TabIndex = 13;
@@ -423,405 +385,23 @@
             // pnlSearch
             // 
             this.pnlSearch.BackColor = System.Drawing.Color.White;
-            this.pnlSearch.Controls.Add(this.panel1);
-            this.pnlSearch.Controls.Add(this.lblDsales);
-            this.pnlSearch.Controls.Add(this.lblDfinance);
-            this.pnlSearch.Controls.Add(this.lblDHR);
-            this.pnlSearch.Controls.Add(this.lblDIT);
-            this.pnlSearch.Controls.Add(this.lblDmarketing);
-            this.pnlSearch.Controls.Add(this.lblSales);
-            this.pnlSearch.Controls.Add(this.lblMarketing);
-            this.pnlSearch.Controls.Add(this.lblHR);
-            this.pnlSearch.Controls.Add(this.lblFinance);
-            this.pnlSearch.Controls.Add(this.picEdit8);
-            this.pnlSearch.Controls.Add(this.picEdit7);
-            this.pnlSearch.Controls.Add(this.lblIt);
-            this.pnlSearch.Controls.Add(this.labelNo4);
-            this.pnlSearch.Controls.Add(this.labelNo5);
-            this.pnlSearch.Controls.Add(this.labelNo3);
-            this.pnlSearch.Controls.Add(this.labelNo2);
-            this.pnlSearch.Controls.Add(this.labelNo1);
-            this.pnlSearch.Controls.Add(this.picEdit10);
-            this.pnlSearch.Controls.Add(this.picEdit6);
-            this.pnlSearch.Controls.Add(this.picEdit4);
-            this.pnlSearch.Controls.Add(this.picEdit9);
-            this.pnlSearch.Controls.Add(this.picEdit5);
-            this.pnlSearch.Controls.Add(this.picEdit3);
-            this.pnlSearch.Controls.Add(this.picEdit);
-            this.pnlSearch.Controls.Add(this.picEdit1);
-            this.pnlSearch.Controls.Add(this.btnext);
-            this.pnlSearch.Controls.Add(this.btnPrevious);
-            this.pnlSearch.Controls.Add(this.btnPage1);
-            this.pnlSearch.Controls.Add(this.btnPage2);
-            this.pnlSearch.Controls.Add(this.lblShowing);
-            this.pnlSearch.Controls.Add(this.picSearch1);
             this.pnlSearch.Controls.Add(this.txtSearch);
+            this.pnlSearch.Controls.Add(this.BTNDsearch);
+            this.pnlSearch.Controls.Add(this.dgvDepartments);
             this.pnlSearch.Location = new System.Drawing.Point(499, 96);
             this.pnlSearch.Name = "pnlSearch";
-            this.pnlSearch.Size = new System.Drawing.Size(725, 807);
+            this.pnlSearch.Size = new System.Drawing.Size(744, 807);
             this.pnlSearch.TabIndex = 14;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(25)))), ((int)(((byte)(55)))));
-            this.panel1.Controls.Add(this.lblID);
-            this.panel1.Controls.Add(this.lblA);
-            this.panel1.Controls.Add(this.lblDN);
-            this.panel1.Controls.Add(this.lblD);
-            this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(0, 54);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(726, 59);
-            this.panel1.TabIndex = 42;
-            // 
-            // lblID
-            // 
-            this.lblID.AutoSize = true;
-            this.lblID.ForeColor = System.Drawing.Color.White;
-            this.lblID.Location = new System.Drawing.Point(44, 20);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(28, 23);
-            this.lblID.TabIndex = 38;
-            this.lblID.Text = "ID";
-            // 
-            // lblA
-            // 
-            this.lblA.AutoSize = true;
-            this.lblA.Location = new System.Drawing.Point(620, 20);
-            this.lblA.Name = "lblA";
-            this.lblA.Size = new System.Drawing.Size(62, 23);
-            this.lblA.TabIndex = 41;
-            this.lblA.Text = "Action";
-            // 
-            // lblDN
-            // 
-            this.lblDN.AutoSize = true;
-            this.lblDN.ForeColor = System.Drawing.Color.White;
-            this.lblDN.Location = new System.Drawing.Point(154, 20);
-            this.lblDN.Name = "lblDN";
-            this.lblDN.Size = new System.Drawing.Size(160, 23);
-            this.lblDN.TabIndex = 39;
-            this.lblDN.Text = "Department Name";
-            // 
-            // lblD
-            // 
-            this.lblD.AutoSize = true;
-            this.lblD.Location = new System.Drawing.Point(413, 20);
-            this.lblD.Name = "lblD";
-            this.lblD.Size = new System.Drawing.Size(102, 23);
-            this.lblD.TabIndex = 40;
-            this.lblD.Text = "Description";
-            // 
-            // lblDsales
-            // 
-            this.lblDsales.AutoSize = true;
-            this.lblDsales.Location = new System.Drawing.Point(314, 579);
-            this.lblDsales.Name = "lblDsales";
-            this.lblDsales.Size = new System.Drawing.Size(278, 23);
-            this.lblDsales.TabIndex = 37;
-            this.lblDsales.Text = "Sales and Customer Management";
-            // 
-            // lblDfinance
-            // 
-            this.lblDfinance.AutoSize = true;
-            this.lblDfinance.Location = new System.Drawing.Point(296, 363);
-            this.lblDfinance.Name = "lblDfinance";
-            this.lblDfinance.Size = new System.Drawing.Size(304, 23);
-            this.lblDfinance.TabIndex = 36;
-            this.lblDfinance.Text = "Financial Operations and Accounting";
-            // 
-            // lblDHR
-            // 
-            this.lblDHR.AutoSize = true;
-            this.lblDHR.Location = new System.Drawing.Point(327, 254);
-            this.lblDHR.Name = "lblDHR";
-            this.lblDHR.Size = new System.Drawing.Size(254, 23);
-            this.lblDHR.TabIndex = 35;
-            this.lblDHR.Text = "Human Resources Department";
-            // 
-            // lblDIT
-            // 
-            this.lblDIT.AutoSize = true;
-            this.lblDIT.Location = new System.Drawing.Point(296, 140);
-            this.lblDIT.Name = "lblDIT";
-            this.lblDIT.Size = new System.Drawing.Size(304, 23);
-            this.lblDIT.TabIndex = 34;
-            this.lblDIT.Text = "Information Technology Department";
-            // 
-            // lblDmarketing
-            // 
-            this.lblDmarketing.AutoSize = true;
-            this.lblDmarketing.Location = new System.Drawing.Point(320, 472);
-            this.lblDmarketing.Name = "lblDmarketing";
-            this.lblDmarketing.Size = new System.Drawing.Size(261, 23);
-            this.lblDmarketing.TabIndex = 33;
-            this.lblDmarketing.Text = "Marketing and Public Relations";
-            // 
-            // lblSales
-            // 
-            this.lblSales.AutoSize = true;
-            this.lblSales.Location = new System.Drawing.Point(195, 579);
-            this.lblSales.Name = "lblSales";
-            this.lblSales.Size = new System.Drawing.Size(50, 23);
-            this.lblSales.TabIndex = 32;
-            this.lblSales.Text = "Sales";
-            // 
-            // lblMarketing
-            // 
-            this.lblMarketing.AutoSize = true;
-            this.lblMarketing.Location = new System.Drawing.Point(175, 472);
-            this.lblMarketing.Name = "lblMarketing";
-            this.lblMarketing.Size = new System.Drawing.Size(94, 23);
-            this.lblMarketing.TabIndex = 31;
-            this.lblMarketing.Text = "Marketing";
-            // 
-            // lblHR
-            // 
-            this.lblHR.AutoSize = true;
-            this.lblHR.Location = new System.Drawing.Point(195, 242);
-            this.lblHR.Name = "lblHR";
-            this.lblHR.Size = new System.Drawing.Size(34, 23);
-            this.lblHR.TabIndex = 30;
-            this.lblHR.Text = "HR";
-            // 
-            // lblFinance
-            // 
-            this.lblFinance.AutoSize = true;
-            this.lblFinance.Location = new System.Drawing.Point(175, 363);
-            this.lblFinance.Name = "lblFinance";
-            this.lblFinance.Size = new System.Drawing.Size(70, 23);
-            this.lblFinance.TabIndex = 29;
-            this.lblFinance.Text = "Finance";
-            // 
-            // picEdit8
-            // 
-            this.picEdit8.BackColor = System.Drawing.Color.Transparent;
-            this.picEdit8.Image = ((System.Drawing.Image)(resources.GetObject("picEdit8.Image")));
-            this.picEdit8.Location = new System.Drawing.Point(680, 460);
-            this.picEdit8.Name = "picEdit8";
-            this.picEdit8.Size = new System.Drawing.Size(32, 35);
-            this.picEdit8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picEdit8.TabIndex = 28;
-            this.picEdit8.TabStop = false;
-            // 
-            // picEdit7
-            // 
-            this.picEdit7.BackColor = System.Drawing.Color.Transparent;
-            this.picEdit7.Image = ((System.Drawing.Image)(resources.GetObject("picEdit7.Image")));
-            this.picEdit7.Location = new System.Drawing.Point(627, 460);
-            this.picEdit7.Name = "picEdit7";
-            this.picEdit7.Size = new System.Drawing.Size(35, 35);
-            this.picEdit7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picEdit7.TabIndex = 27;
-            this.picEdit7.TabStop = false;
-            // 
-            // lblIt
-            // 
-            this.lblIt.AutoSize = true;
-            this.lblIt.Location = new System.Drawing.Point(204, 140);
-            this.lblIt.Name = "lblIt";
-            this.lblIt.Size = new System.Drawing.Size(25, 23);
-            this.lblIt.TabIndex = 26;
-            this.lblIt.Text = "IT";
-            // 
-            // labelNo4
-            // 
-            this.labelNo4.AutoSize = true;
-            this.labelNo4.Location = new System.Drawing.Point(41, 472);
-            this.labelNo4.Name = "labelNo4";
-            this.labelNo4.Size = new System.Drawing.Size(20, 23);
-            this.labelNo4.TabIndex = 25;
-            this.labelNo4.Text = "4";
-            // 
-            // labelNo5
-            // 
-            this.labelNo5.AutoSize = true;
-            this.labelNo5.Location = new System.Drawing.Point(33, 579);
-            this.labelNo5.Name = "labelNo5";
-            this.labelNo5.Size = new System.Drawing.Size(20, 23);
-            this.labelNo5.TabIndex = 24;
-            this.labelNo5.Text = "5";
-            // 
-            // labelNo3
-            // 
-            this.labelNo3.AutoSize = true;
-            this.labelNo3.Location = new System.Drawing.Point(41, 353);
-            this.labelNo3.Name = "labelNo3";
-            this.labelNo3.Size = new System.Drawing.Size(20, 23);
-            this.labelNo3.TabIndex = 23;
-            this.labelNo3.Text = "3";
-            // 
-            // labelNo2
-            // 
-            this.labelNo2.AutoSize = true;
-            this.labelNo2.Location = new System.Drawing.Point(31, 254);
-            this.labelNo2.Name = "labelNo2";
-            this.labelNo2.Size = new System.Drawing.Size(20, 23);
-            this.labelNo2.TabIndex = 22;
-            this.labelNo2.Text = "2";
-            // 
-            // labelNo1
-            // 
-            this.labelNo1.AutoSize = true;
-            this.labelNo1.Location = new System.Drawing.Point(31, 140);
-            this.labelNo1.Name = "labelNo1";
-            this.labelNo1.Size = new System.Drawing.Size(20, 23);
-            this.labelNo1.TabIndex = 21;
-            this.labelNo1.Text = "1";
-            // 
-            // picEdit10
-            // 
-            this.picEdit10.BackColor = System.Drawing.Color.Transparent;
-            this.picEdit10.Image = ((System.Drawing.Image)(resources.GetObject("picEdit10.Image")));
-            this.picEdit10.Location = new System.Drawing.Point(680, 579);
-            this.picEdit10.Name = "picEdit10";
-            this.picEdit10.Size = new System.Drawing.Size(32, 35);
-            this.picEdit10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picEdit10.TabIndex = 16;
-            this.picEdit10.TabStop = false;
-            // 
-            // picEdit6
-            // 
-            this.picEdit6.BackColor = System.Drawing.Color.Transparent;
-            this.picEdit6.Image = ((System.Drawing.Image)(resources.GetObject("picEdit6.Image")));
-            this.picEdit6.Location = new System.Drawing.Point(680, 363);
-            this.picEdit6.Name = "picEdit6";
-            this.picEdit6.Size = new System.Drawing.Size(32, 35);
-            this.picEdit6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picEdit6.TabIndex = 15;
-            this.picEdit6.TabStop = false;
-            // 
-            // picEdit4
-            // 
-            this.picEdit4.BackColor = System.Drawing.Color.Transparent;
-            this.picEdit4.Image = ((System.Drawing.Image)(resources.GetObject("picEdit4.Image")));
-            this.picEdit4.Location = new System.Drawing.Point(680, 242);
-            this.picEdit4.Name = "picEdit4";
-            this.picEdit4.Size = new System.Drawing.Size(32, 35);
-            this.picEdit4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picEdit4.TabIndex = 14;
-            this.picEdit4.TabStop = false;
-            // 
-            // picEdit9
-            // 
-            this.picEdit9.BackColor = System.Drawing.Color.Transparent;
-            this.picEdit9.Image = ((System.Drawing.Image)(resources.GetObject("picEdit9.Image")));
-            this.picEdit9.Location = new System.Drawing.Point(632, 579);
-            this.picEdit9.Name = "picEdit9";
-            this.picEdit9.Size = new System.Drawing.Size(35, 35);
-            this.picEdit9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picEdit9.TabIndex = 13;
-            this.picEdit9.TabStop = false;
-            // 
-            // picEdit5
-            // 
-            this.picEdit5.BackColor = System.Drawing.Color.Transparent;
-            this.picEdit5.Image = ((System.Drawing.Image)(resources.GetObject("picEdit5.Image")));
-            this.picEdit5.Location = new System.Drawing.Point(632, 363);
-            this.picEdit5.Name = "picEdit5";
-            this.picEdit5.Size = new System.Drawing.Size(35, 35);
-            this.picEdit5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picEdit5.TabIndex = 12;
-            this.picEdit5.TabStop = false;
-            // 
-            // picEdit3
-            // 
-            this.picEdit3.BackColor = System.Drawing.Color.Transparent;
-            this.picEdit3.Image = ((System.Drawing.Image)(resources.GetObject("picEdit3.Image")));
-            this.picEdit3.Location = new System.Drawing.Point(632, 242);
-            this.picEdit3.Name = "picEdit3";
-            this.picEdit3.Size = new System.Drawing.Size(35, 35);
-            this.picEdit3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picEdit3.TabIndex = 11;
-            this.picEdit3.TabStop = false;
-            // 
-            // picEdit
-            // 
-            this.picEdit.BackColor = System.Drawing.Color.Transparent;
-            this.picEdit.Image = ((System.Drawing.Image)(resources.GetObject("picEdit.Image")));
-            this.picEdit.Location = new System.Drawing.Point(627, 142);
-            this.picEdit.Name = "picEdit";
-            this.picEdit.Size = new System.Drawing.Size(35, 35);
-            this.picEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picEdit.TabIndex = 10;
-            this.picEdit.TabStop = false;
-            // 
-            // picEdit1
-            // 
-            this.picEdit1.BackColor = System.Drawing.Color.Transparent;
-            this.picEdit1.Image = ((System.Drawing.Image)(resources.GetObject("picEdit1.Image")));
-            this.picEdit1.Location = new System.Drawing.Point(680, 144);
-            this.picEdit1.Name = "picEdit1";
-            this.picEdit1.Size = new System.Drawing.Size(32, 33);
-            this.picEdit1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picEdit1.TabIndex = 9;
-            this.picEdit1.TabStop = false;
-            // 
-            // btnext
-            // 
-            this.btnext.Location = new System.Drawing.Point(632, 639);
-            this.btnext.Name = "btnext";
-            this.btnext.Size = new System.Drawing.Size(29, 32);
-            this.btnext.TabIndex = 8;
-            this.btnext.Text = ">";
-            this.btnext.UseVisualStyleBackColor = true;
-            // 
-            // btnPrevious
-            // 
-            this.btnPrevious.Location = new System.Drawing.Point(528, 640);
-            this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(29, 30);
-            this.btnPrevious.TabIndex = 7;
-            this.btnPrevious.Text = "<";
-            this.btnPrevious.UseVisualStyleBackColor = true;
-            // 
-            // btnPage1
-            // 
-            this.btnPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(75)))), ((int)(((byte)(165)))));
-            this.btnPage1.Location = new System.Drawing.Point(563, 638);
-            this.btnPage1.Name = "btnPage1";
-            this.btnPage1.Size = new System.Drawing.Size(29, 35);
-            this.btnPage1.TabIndex = 6;
-            this.btnPage1.Text = "1";
-            this.btnPage1.UseVisualStyleBackColor = false;
-            // 
-            // btnPage2
-            // 
-            this.btnPage2.Location = new System.Drawing.Point(601, 639);
-            this.btnPage2.Name = "btnPage2";
-            this.btnPage2.Size = new System.Drawing.Size(25, 34);
-            this.btnPage2.TabIndex = 5;
-            this.btnPage2.Text = "2";
-            this.btnPage2.UseVisualStyleBackColor = true;
-            // 
-            // lblShowing
-            // 
-            this.lblShowing.AutoSize = true;
-            this.lblShowing.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
-            this.lblShowing.Location = new System.Drawing.Point(3, 647);
-            this.lblShowing.Name = "lblShowing";
-            this.lblShowing.Size = new System.Drawing.Size(159, 23);
-            this.lblShowing.TabIndex = 4;
-            this.lblShowing.Text = "Showing 1 - 5 of 5";
-            // 
-            // picSearch1
-            // 
-            this.picSearch1.BackColor = System.Drawing.Color.Transparent;
-            this.picSearch1.Image = ((System.Drawing.Image)(resources.GetObject("picSearch1.Image")));
-            this.picSearch1.Location = new System.Drawing.Point(3, 4);
-            this.picSearch1.Name = "picSearch1";
-            this.picSearch1.Size = new System.Drawing.Size(32, 23);
-            this.picSearch1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSearch1.TabIndex = 1;
-            this.picSearch1.TabStop = false;
             // 
             // txtSearch
             // 
-            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(37, 4);
+            this.txtSearch.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtSearch.Location = new System.Drawing.Point(77, 24);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(202, 23);
+            this.txtSearch.Size = new System.Drawing.Size(358, 30);
             this.txtSearch.TabIndex = 0;
             this.txtSearch.Text = "Search departments...";
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
@@ -830,10 +410,11 @@
             // 
             this.lblHeaderTitle.AutoSize = true;
             this.lblHeaderTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblHeaderTitle.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(43)))), ((int)(((byte)(77)))));
-            this.lblHeaderTitle.Location = new System.Drawing.Point(85, 32);
+            this.lblHeaderTitle.Location = new System.Drawing.Point(267, 13);
             this.lblHeaderTitle.Name = "lblHeaderTitle";
-            this.lblHeaderTitle.Size = new System.Drawing.Size(226, 23);
+            this.lblHeaderTitle.Size = new System.Drawing.Size(488, 50);
             this.lblHeaderTitle.TabIndex = 0;
             this.lblHeaderTitle.Text = "Departments Management";
             this.lblHeaderTitle.Click += new System.EventHandler(this.lblHeaderTitle_Click);
@@ -842,9 +423,9 @@
             // 
             this.picLayers.BackColor = System.Drawing.Color.Transparent;
             this.picLayers.Image = ((System.Drawing.Image)(resources.GetObject("picLayers.Image")));
-            this.picLayers.Location = new System.Drawing.Point(25, 29);
+            this.picLayers.Location = new System.Drawing.Point(195, 13);
             this.picLayers.Name = "picLayers";
-            this.picLayers.Size = new System.Drawing.Size(32, 32);
+            this.picLayers.Size = new System.Drawing.Size(66, 56);
             this.picLayers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLayers.TabIndex = 1;
             this.picLayers.TabStop = false;
@@ -853,7 +434,7 @@
             // 
             this.picAvatar.BackColor = System.Drawing.Color.Transparent;
             this.picAvatar.Image = ((System.Drawing.Image)(resources.GetObject("picAvatar.Image")));
-            this.picAvatar.Location = new System.Drawing.Point(1070, 13);
+            this.picAvatar.Location = new System.Drawing.Point(1041, 16);
             this.picAvatar.Name = "picAvatar";
             this.picAvatar.Size = new System.Drawing.Size(42, 42);
             this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -864,7 +445,7 @@
             // 
             this.lblUserName.AutoSize = true;
             this.lblUserName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserName.Location = new System.Drawing.Point(1127, 3);
+            this.lblUserName.Location = new System.Drawing.Point(1089, 13);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(118, 23);
             this.lblUserName.TabIndex = 3;
@@ -875,7 +456,7 @@
             this.lblUserRole.AutoSize = true;
             this.lblUserRole.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserRole.ForeColor = System.Drawing.Color.Gray;
-            this.lblUserRole.Location = new System.Drawing.Point(1135, 32);
+            this.lblUserRole.Location = new System.Drawing.Point(1128, 39);
             this.lblUserRole.Name = "lblUserRole";
             this.lblUserRole.Size = new System.Drawing.Size(53, 19);
             this.lblUserRole.TabIndex = 4;
@@ -885,7 +466,7 @@
             // 
             this.picNotification.BackColor = System.Drawing.Color.Transparent;
             this.picNotification.Image = ((System.Drawing.Image)(resources.GetObject("picNotification.Image")));
-            this.picNotification.Location = new System.Drawing.Point(1035, 16);
+            this.picNotification.Location = new System.Drawing.Point(1000, 29);
             this.picNotification.Name = "picNotification";
             this.picNotification.Size = new System.Drawing.Size(25, 29);
             this.picNotification.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -896,7 +477,7 @@
             // 
             this.picUserArrow.BackColor = System.Drawing.Color.Transparent;
             this.picUserArrow.Image = ((System.Drawing.Image)(resources.GetObject("picUserArrow.Image")));
-            this.picUserArrow.Location = new System.Drawing.Point(1246, 39);
+            this.picUserArrow.Location = new System.Drawing.Point(1224, 47);
             this.picUserArrow.Name = "picUserArrow";
             this.picUserArrow.Size = new System.Drawing.Size(16, 16);
             this.picUserArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -906,14 +487,9 @@
             // pnlHeader
             // 
             this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+            this.pnlHeader.Controls.Add(this.pnlAddDepartment);
+            this.pnlHeader.Controls.Add(this.panel2);
             this.pnlHeader.Controls.Add(this.pnlSearch);
-            this.pnlHeader.Controls.Add(this.picUserArrow);
-            this.pnlHeader.Controls.Add(this.picNotification);
-            this.pnlHeader.Controls.Add(this.lblUserRole);
-            this.pnlHeader.Controls.Add(this.lblUserName);
-            this.pnlHeader.Controls.Add(this.picAvatar);
-            this.pnlHeader.Controls.Add(this.picLayers);
-            this.pnlHeader.Controls.Add(this.lblHeaderTitle);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(270, 0);
             this.pnlHeader.Name = "pnlHeader";
@@ -921,13 +497,94 @@
             this.pnlHeader.TabIndex = 12;
             this.pnlHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.lblHeaderTitle);
+            this.panel2.Controls.Add(this.picLayers);
+            this.panel2.Controls.Add(this.picNotification);
+            this.panel2.Controls.Add(this.picAvatar);
+            this.panel2.Controls.Add(this.picUserArrow);
+            this.panel2.Controls.Add(this.lblUserName);
+            this.panel2.Controls.Add(this.lblUserRole);
+            this.panel2.Location = new System.Drawing.Point(0, 16);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1262, 74);
+            this.panel2.TabIndex = 15;
+            // 
+            // dgvDepartments
+            // 
+            this.dgvDepartments.AllowUserToAddRows = false;
+            this.dgvDepartments.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDepartments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDepartments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colID,
+            this.colDepartmentName,
+            this.colDescription,
+            this.colEdit,
+            this.colDelete});
+            this.dgvDepartments.Location = new System.Drawing.Point(26, 91);
+            this.dgvDepartments.MultiSelect = false;
+            this.dgvDepartments.Name = "dgvDepartments";
+            this.dgvDepartments.ReadOnly = true;
+            this.dgvDepartments.RowHeadersWidth = 51;
+            this.dgvDepartments.RowTemplate.Height = 24;
+            this.dgvDepartments.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDepartments.Size = new System.Drawing.Size(715, 505);
+            this.dgvDepartments.TabIndex = 43;
+            // 
+            // colID
+            // 
+            this.colID.HeaderText = "ID";
+            this.colID.MinimumWidth = 6;
+            this.colID.Name = "colID";
+            this.colID.ReadOnly = true;
+            // 
+            // colDepartmentName
+            // 
+            this.colDepartmentName.HeaderText = "Department Name";
+            this.colDepartmentName.MinimumWidth = 6;
+            this.colDepartmentName.Name = "colDepartmentName";
+            this.colDepartmentName.ReadOnly = true;
+            // 
+            // colDescription
+            // 
+            this.colDescription.HeaderText = "Description";
+            this.colDescription.MinimumWidth = 6;
+            this.colDescription.Name = "colDescription";
+            this.colDescription.ReadOnly = true;
+            // 
+            // colEdit
+            // 
+            this.colEdit.HeaderText = "Edit";
+            this.colEdit.MinimumWidth = 6;
+            this.colEdit.Name = "colEdit";
+            this.colEdit.ReadOnly = true;
+            // 
+            // colDelete
+            // 
+            this.colDelete.HeaderText = "Delete";
+            this.colDelete.MinimumWidth = 6;
+            this.colDelete.Name = "colDelete";
+            this.colDelete.ReadOnly = true;
+            // 
+            // BTNDsearch
+            // 
+            this.BTNDsearch.BackColor = System.Drawing.Color.DarkGray;
+            this.BTNDsearch.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNDsearch.Location = new System.Drawing.Point(441, 24);
+            this.BTNDsearch.Name = "BTNDsearch";
+            this.BTNDsearch.Size = new System.Drawing.Size(68, 30);
+            this.BTNDsearch.TabIndex = 44;
+            this.BTNDsearch.Text = "search";
+            this.BTNDsearch.UseVisualStyleBackColor = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(1544, 943);
-            this.Controls.Add(this.pnlAddDepartment);
             this.Controls.Add(this.pnlHeader);
             this.Controls.Add(this.pnlSidebar);
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -949,25 +606,14 @@
             this.pnlAddDepartment.PerformLayout();
             this.pnlSearch.ResumeLayout(false);
             this.pnlSearch.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSearch1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLayers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNotification)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUserArrow)).EndInit();
             this.pnlHeader.ResumeLayout(false);
-            this.pnlHeader.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDepartments)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -998,41 +644,6 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Panel pnlSearch;
         private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.PictureBox picSearch1;
-        private System.Windows.Forms.Button btnPrevious;
-        private System.Windows.Forms.Button btnPage1;
-        private System.Windows.Forms.Button btnPage2;
-        private System.Windows.Forms.Label lblShowing;
-        private System.Windows.Forms.Button btnext;
-        private System.Windows.Forms.PictureBox picEdit;
-        private System.Windows.Forms.PictureBox picEdit1;
-        private System.Windows.Forms.PictureBox picEdit10;
-        private System.Windows.Forms.PictureBox picEdit6;
-        private System.Windows.Forms.PictureBox picEdit4;
-        private System.Windows.Forms.PictureBox picEdit9;
-        private System.Windows.Forms.PictureBox picEdit5;
-        private System.Windows.Forms.PictureBox picEdit3;
-        private System.Windows.Forms.Label lblSales;
-        private System.Windows.Forms.Label lblMarketing;
-        private System.Windows.Forms.Label lblHR;
-        private System.Windows.Forms.Label lblFinance;
-        private System.Windows.Forms.PictureBox picEdit8;
-        private System.Windows.Forms.PictureBox picEdit7;
-        private System.Windows.Forms.Label lblIt;
-        private System.Windows.Forms.Label labelNo4;
-        private System.Windows.Forms.Label labelNo5;
-        private System.Windows.Forms.Label labelNo3;
-        private System.Windows.Forms.Label labelNo2;
-        private System.Windows.Forms.Label labelNo1;
-        private System.Windows.Forms.Label lblDsales;
-        private System.Windows.Forms.Label lblDfinance;
-        private System.Windows.Forms.Label lblDHR;
-        private System.Windows.Forms.Label lblDIT;
-        private System.Windows.Forms.Label lblDmarketing;
-        private System.Windows.Forms.Label lblA;
-        private System.Windows.Forms.Label lblD;
-        private System.Windows.Forms.Label lblDN;
-        private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label lblHeaderTitle;
         private System.Windows.Forms.PictureBox picLayers;
         private System.Windows.Forms.PictureBox picAvatar;
@@ -1041,7 +652,14 @@
         private System.Windows.Forms.PictureBox picNotification;
         private System.Windows.Forms.PictureBox picUserArrow;
         private System.Windows.Forms.Panel pnlHeader;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView dgvDepartments;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDepartmentName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDescription;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colEdit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDelete;
+        private System.Windows.Forms.Button BTNDsearch;
     }
 }
 
